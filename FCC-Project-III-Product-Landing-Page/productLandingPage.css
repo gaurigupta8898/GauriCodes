@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+body {
+    background-color: #eee;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER ELEMENT */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: palegoldenrod;
+    width: 100%;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+}
+
+.company-logo {
+    width: 40vw;
+}
+
+#header-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ABOUT SECTION */
+#about {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    margin-top: 120px;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+#email {
+    padding: 0.5rem 1rem;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    padding: 0.3rem 0.4rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: palegoldenrod;
+}
+
+/* FEATURES SECTION*/
+
+#features {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10vw 50vw;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.icon {
+    color: orange;
+}
+
+
+/* HOW IT WORKS SECTION*/
+
+#howItWorks {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    width: 550px;
+    height: 316px;
+}
+
+/* PRICING SECTION */
+#pricing {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.price {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price h3 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: palegoldenrod;
+    text-align: center;
+}
+
+.price p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.price button {
+    padding: 0.4rem 0.4rem;
+    background-color: palegoldenrod;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    margin-top: 20px;
+    width: 100vw;
+    background-color: palegoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer ul li {
+    margin-right: 1rem;
+}
+
+footer ul li a {
+    color: black;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:100px) and (max-width:700px) {
+    #header {
+        flex-direction: column;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+
+    .feature {
+        width: 100vw;
+    }
+
+    .feature h2 {
+        text-align: center;
+    }
+
+    #pricing {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1000px;
+    }
+}

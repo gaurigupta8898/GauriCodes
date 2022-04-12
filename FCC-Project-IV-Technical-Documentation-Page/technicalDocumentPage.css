@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#navbar {
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    border-right: 1px solid gray;
+    top: 0;
+    left: 0;
+}
+
+#navbar header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.nav-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    height: 10vh;
+    border-top: solid 1px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.main-section {
+    margin: 5vh 2vw 0 22vw;
+}
+
+code {
+    display: block;
+    background-color: #F7F7F7;
+
+
+}
+
+@media screen and (min-width:100px) and (max-width:700px) {
+    #navbar {
+        width: 100vw;
+    }
+
+}
