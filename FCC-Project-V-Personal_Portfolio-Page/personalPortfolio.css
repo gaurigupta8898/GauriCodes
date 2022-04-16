@@ -1,6 +1,6 @@
 body {
-    margin: 0;
     background-color: black;
+    margin: 0;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
     top: 0;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: palevioletred;
+    background-color: #fae0e4;
 }
 
 #info-links {
@@ -25,8 +25,7 @@ a {
 }
 
 #info-links li a {
-    text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     display: block;
     margin: 1rem;
@@ -34,18 +33,17 @@ a {
 
 
 #info-links a:hover {
-    color: cyan;
+    color: #d81159;
 }
 
 /* ABOUT SECTION*/
 #welcome-section {
-    height: 100vh;
-    color: white;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Lexend Deca', sans-serif;
+    background-color: #ff0a54;
+    color: white;
 }
 
 #welcome-section h1 {
@@ -119,6 +117,7 @@ a {
     justify-content: center;
     align-items: center;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: #E30B5C;
 }
 
 #contact p {
@@ -137,7 +136,7 @@ a {
 }
 
 i {
-    color: aqua;
+    color: black;
 }
 
 i:hover {
@@ -145,6 +144,10 @@ i:hover {
 }
 
 @media screen and (min-width:100px) and (max-width:700px) {
+    #projects {
+        padding: 5rem 2rem;
+    }
+
     #projects .container {
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: minmax(150px, auto);
